@@ -1,0 +1,7 @@
+<div id="flats" class="d-flex flex-wrap justify-content-evenly">
+  <% flats.each do |flat| %>
+    <div class="col-4">
+      <%= render 'flats/flat', {flat: flat} %>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,16 @@
+
+<p style="color: green"><%= notice %></p>
+
+<%= render @flat %>
+
+<div>
+
+  <%= link_to "Edit this flat", edit_flat_path(@flat) %> |
+  <%= link_to "Back to flats", flats_path %>
+
+
+  <%= link_to "Delete this flat",
+                    flat_path(@flat),
+                    data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+                  %>
+</div>
